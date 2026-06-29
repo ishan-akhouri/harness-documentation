@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ishanakhouri/harness-documentation
-  tag: latest
+  tag: <+artifact.tag>
   pullPolicy: Always
 
 service:
