@@ -4,6 +4,7 @@
   "description": "Simple Node.js app for Harness CD demo",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test.js"
   }
 }
