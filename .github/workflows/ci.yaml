@@ -43,4 +43,5 @@ jobs:
         with:
           context: .
           push: true
+          pull: true
           tags: ishanakhouri/harness-documentation:${{ github.sha }}
