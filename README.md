@@ -10,3 +10,4 @@ i forgot to save the pipeline.~
 final check for sast
 testing dast
 testing again dast
+testing it one more time this time dropping the thing in command
