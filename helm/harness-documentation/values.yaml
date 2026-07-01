@@ -1,3 +1,4 @@
+fullnameOverride: "harness-documentation"
 replicaCount: 1
 
 image:
