@@ -24,8 +24,19 @@ jobs:
       - name: Run tests
         run: npm test
 
+  sast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Semgrep SAST scan
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/javascript
+
   build-and-push:
-    needs: test
+    needs: [test, sast]
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
